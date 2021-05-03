@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>王哥三角计算器(V1)</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div id="mainframe">
+      <input
+        type="text"
+        value="第一个三角"
+        id="firstvalue"
+        onfocus="ClearFirstDefultValue(firstvalue.value)"
+      />
+      <br />
+      <input
+        type="text"
+        value="第二个三角"
+        id="secondvalue"
+        onfocus="ClearSecondDefultValue(secondvalue.value)"
+      />
+      <input type="text" value="答案" id="answer" readonly />
+      <button
+        id="getanswer"
+        value="确定"
+        name="确定"
+        onclick="Isstring(firstvalue.value,secondvalue.value,answer.value);"
+      >
+        确定
+      </button>
+    </div>
+  </body>
+</html>
